@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .face {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: yellow;
+      position: relative;
+    }
+
+    .eyes {
+      position: absolute;
+      top: 45%;
+      left: 30%;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    .eyes.left {
+      left: 30%;
+    }
+
+    .eyes.right {
+      left: 50%;
+    }
+
+    .mouth {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      width: 80px;
+      height: 50px;
+      border-radius: 50% 50% 0 0;
+      border: 2px solid black;
+      border-top: none;
+      transform: translateX(-50%);
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="face">
+    <div class="eyes left"></div>
+    <div class="eyes right"></div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>
